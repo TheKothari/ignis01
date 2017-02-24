@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  FID: MyString
+  Address: MyText
+  Bays: 1
+  Houbli: MyString
+  Taluk: MyString
+  District: MyString
+  Range: MyString
+  Zone: MyString
+
+two:
+  Name: MyString
+  FID: MyString
+  Address: MyText
+  Bays: 1
+  Houbli: MyString
+  Taluk: MyString
+  District: MyString
+  Range: MyString
+  Zone: MyString

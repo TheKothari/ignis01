@@ -1,0 +1,42 @@
+<%= form_for(office) do |f| %>
+  <% if office.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(office.errors.count, "error") %> prohibited this office from being saved:</h2>
+
+      <ul>
+      <% office.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Designation %>
+    <%= f.text_field :Designation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OfficeNo %>
+    <%= f.text_field :OfficeNo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Status %>
+    <%= f.text_field :Status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bhk %>
+    <%= f.number_field :bhk %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FID %>
+    <%= f.text_field :FID %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Breakroom:</strong>
+  <%= @other_building.Breakroom %>
+</p>
+
+<p>
+  <strong>Telephoneroom:</strong>
+  <%= @other_building.TelephoneRoom %>
+</p>
+
+<p>
+  <strong>Restroom:</strong>
+  <%= @other_building.Restroom %>
+</p>
+
+<p>
+  <strong>Fid:</strong>
+  <%= @other_building.FID %>
+</p>
+
+<%= link_to 'Edit', edit_other_building_path(@other_building) %> |
+<%= link_to 'Back', other_buildings_path %>

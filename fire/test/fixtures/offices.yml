@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Designation: MyString
+  OfficeNo: MyString
+  Status: MyString
+  bhk: 1
+  FID: MyString
+
+two:
+  Designation: MyString
+  OfficeNo: MyString
+  Status: MyString
+  bhk: 1
+  FID: MyString

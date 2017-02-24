@@ -1,0 +1,62 @@
+<%= form_for(fire_station) do |f| %>
+  <% if fire_station.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fire_station.errors.count, "error") %> prohibited this fire_station from being saved:</h2>
+
+      <ul>
+      <% fire_station.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :FID %>
+    <%= f.text_field :FID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Address %>
+    <%= f.text_area :Address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Bays %>
+    <%= f.number_field :Bays %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Houbli %>
+    <%= f.text_field :Houbli %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Taluk %>
+    <%= f.text_field :Taluk %>
+  </div>
+
+  <div class="field">
+    <%= f.label :District %>
+    <%= f.text_field :District %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Range %>
+    <%= f.text_field :Range %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Zone %>
+    <%= f.text_field :Zone %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

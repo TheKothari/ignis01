@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Other Buildings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Breakroom|</th>
+      <th>Telephoneroom|</th>
+      <th>Restroom|</th>
+      <th>Fid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @other_buildings.each do |other_building| %>
+      <tr>
+        <td><%= other_building.Breakroom %></td>
+        <td><%= other_building.TelephoneRoom %></td>
+        <td><%= other_building.Restroom %></td>
+        <td><%= other_building.FID %></td>
+        <td><%= link_to 'Show', other_building %></td>
+        <td><%= link_to 'Edit', edit_other_building_path(other_building) %></td>
+        <td><%= link_to 'Destroy', other_building, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Other Building', new_other_building_path %><br>
+<%= link_to 'Fire Station', fire_stations_path %>

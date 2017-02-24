@@ -1,0 +1,2 @@
+class OtherBuilding < ApplicationRecord
+end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Designation:</strong>
+  <%= @office.Designation %>
+</p>
+
+<p>
+  <strong>Officeno:</strong>
+  <%= @office.OfficeNo %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @office.Status %>
+</p>
+
+<p>
+  <strong>Bhk:</strong>
+  <%= @office.bhk %>
+</p>
+
+<p>
+  <strong>Fid:</strong>
+  <%= @office.FID %>
+</p>
+
+<%= link_to 'Edit', edit_office_path(@office) %> |
+<%= link_to 'Back', offices_path %>

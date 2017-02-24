@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fire_station.Name %>
+</p>
+
+<p>
+  <strong>Fid:</strong>
+  <%= @fire_station.FID %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @fire_station.Address %>
+</p>
+
+<p>
+  <strong>Bays:</strong>
+  <%= @fire_station.Bays %>
+</p>
+
+<p>
+  <strong>Houbli:</strong>
+  <%= @fire_station.Houbli %>
+</p>
+
+<p>
+  <strong>Taluk:</strong>
+  <%= @fire_station.Taluk %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @fire_station.District %>
+</p>
+
+<p>
+  <strong>Range:</strong>
+  <%= @fire_station.Range %>
+</p>
+
+<p>
+  <strong>Zone:</strong>
+  <%= @fire_station.Zone %>
+</p>
+
+<%= link_to 'Edit', edit_fire_station_path(@fire_station) %> |
+<%= link_to 'Back', fire_stations_path %>

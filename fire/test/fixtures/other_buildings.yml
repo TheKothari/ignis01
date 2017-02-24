@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Breakroom: MyString
+  TelephoneRoom: MyString
+  Restroom: MyString
+  FID: MyString
+
+two:
+  Breakroom: MyString
+  TelephoneRoom: MyString
+  Restroom: MyString
+  FID: MyString
